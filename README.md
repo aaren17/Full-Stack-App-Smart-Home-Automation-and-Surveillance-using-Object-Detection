@@ -34,9 +34,3 @@ The system integrates multiple technologies such as **YOLOv11s for object detect
 
 ---
 
-## Installation Guide
-
-### **1. Clone the Repository**
-```bash
-git clone https://github.com/yourusername/Smart-Home-Automation.git
-cd Smart-Home-Automation
