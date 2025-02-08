@@ -1,35 +1,42 @@
-Smart Home Automation and Security System Using AI & IoT
-Overview
-This project is a smart home automation and security system that integrates AI and IoT technologies to control home appliances, monitor environmental conditions, and enhance surveillance through object detection. It features event-based recording, real-time notifications, and remote device control via a mobile interface.
+# Smart Home Automation and Security System
 
-Features
-1. Home Automation System
-Appliance Control: Remotely controls LED lights and a DC motor (acting as a fan or air conditioning device).
-Environmental Monitoring: Uses a DHT11 sensor to measure temperature and humidity.
-Blynk API Integration: Allows remote management of connected devices.
-Weather Information Display: Fetches real-time weather data using the OpenWeather API.
-2. Surveillance & Security System
-Object Detection: Uses YOLOv11s to detect people in the surveillance feed.
-Event-Based Recording: Captures video and images only when a person is detected, optimizing storage and processing resources.
-Live Streaming: Streams video using MediaMTX and WebRTC, providing real-time access via an HTTP link.
-Efficient Processing: Video footage from an IP Webcam is processed on a PC, running object detection before being streamed to MediaMTX via RTSP for WebRTC access.
-Cloud Storage: Recorded videos and images are uploaded to Firebase.
-Real-Time Alerts: Sends push notifications using Firebase Cloud Messaging (FCM) when a person is detected.
-System Components & Technologies
-Hardware
-ESP8266 (NodeMCU)
-DHT11 Sensor (for temperature and humidity monitoring)
-LED Lights (for smart lighting control)
-DC Motor (acting as a fan/air conditioning device)
-Motor Controller (to manage motor operations)
-Battery Holder (external power supply for ESP8266)
-Diode (for power protection)
-Software & APIs
-Flutter (for mobile application interface)
-Python (for object detection and event-based recording)
-YOLOv11s (AI model for object detection)
-Firebase (for cloud storage and notifications)
-Firebase Cloud Messaging (FCM) (for real-time alerts)
-Blynk API (for IoT device control)
-MediaMTX & WebRTC (for low-latency video streaming)
-OpenWeather API (for fetching weather data)
+## Description of the Smart Home Automation and Security System
+The **Smart Home Automation and Security System** is an AI and IoT-based project that allows users to control home appliances, monitor environmental conditions, and enhance security through real-time surveillance and event-based recording. 
+
+The system integrates multiple technologies such as **YOLOv11s for object detection**, **Blynk API for device control**, and **Firebase for cloud storage and real-time alerts**. Users can access and control devices remotely through a **Flutter-based mobile application**.
+
+---
+
+## Key Features
+
+### **1. Home Automation**
+- **Appliance Control:** Remotely controls **LED lights and a DC motor** (acting as a fan or air conditioning system).
+- **Environmental Monitoring:** Uses a **DHT11 sensor** to track temperature and humidity.
+- **Remote Management:** Utilizes the **Blynk API** for controlling IoT devices.
+- **Weather Display:** Fetches real-time weather data using the **OpenWeather API**.
+
+### **2. Surveillance & Security System**
+- **Object Detection:** Implements **YOLOv11s** to detect people in surveillance footage.
+- **Event-Based Recording:** Captures video and images **only when a person is detected**, reducing unnecessary storage usage.
+- **Live Streaming:** Uses **MediaMTX & WebRTC** to provide a real-time video feed accessible via an HTTP link.
+- **Cloud Storage & Alerts:** Automatically uploads **recorded images and videos to Firebase** and **sends notifications via Firebase Cloud Messaging (FCM)**.
+
+---
+
+## Implementation Details
+
+- **ESP8266 (NodeMCU):** Acts as the core microcontroller for home automation.
+- **Flutter Mobile App:** Provides a user-friendly interface for device control and monitoring.
+- **Python & YOLOv11s:** Handles object detection and event-based recording.
+- **MediaMTX & WebRTC:** Enables real-time video streaming with minimal latency.
+- **Firebase:** Stores captured images and videos and handles real-time notifications.
+- **Blynk API:** Allows IoT devices to be controlled remotely.
+
+---
+
+## Installation Guide
+
+### **1. Clone the Repository**
+```bash
+git clone https://github.com/yourusername/Smart-Home-Automation.git
+cd Smart-Home-Automation
