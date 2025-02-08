@@ -1,0 +1,26 @@
+# === Flutter / Dart ===
+# Build outputs
+build/
+# Generated files
+.dart_tool/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+# IntelliJ / Android Studio files
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+env/
+venv/
+
+# === macOS or Windows system files (optional) ===
+.DS_Store
+Thumbs.db

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "816999256331",
+    "project_id": "recordingstorage-58932",
+    "storage_bucket": "recordingstorage-58932.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:816999256331:android:69c6676e0db1ea0a9f120e",
+        "android_client_info": {
+          "package_name": "com.project.smartHome"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCC1zAA4TXEAGjtW5SmyxxqB2aXLHgwQEI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

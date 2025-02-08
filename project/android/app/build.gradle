@@ -1,0 +1,55 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'dev.flutter.flutter-gradle-plugin' // Flutter Gradle Plugin
+}
+
+android {
+    namespace = "com.project.smartHome" // Match your package name
+    compileSdk = 34 // Ensure compatibility with the latest SDK version
+
+    defaultConfig {
+        applicationId = "com.project.smartHome"
+        minSdk = 24 // Minimum SDK version required by Flutter
+        targetSdk = 33 // Target the latest stable version
+        versionCode = 1
+        versionName = "1.0"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    kotlinOptions {
+        jvmTarget = '11'
+    }
+
+    buildTypes {
+        debug {
+            // Debug build settings
+            minifyEnabled false
+            shrinkResources false
+        }
+        release {
+            // Release build settings
+            minifyEnabled false
+            shrinkResources false
+            // Use signingConfig if keys are configured
+            // signingConfig signingConfigs.release
+        }
+    }
+}
+
+flutter {
+    source '../..'
+}
+
+// Dependencies required for your project
+dependencies {
+    implementation 'androidx.core:core-ktx:1.10.1'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.9.10'
+    implementation platform('com.google.firebase:firebase-bom:32.7.1')
+    implementation 'com.google.firebase:firebase-storage'
+}
+apply plugin: 'com.google.gms.google-services'
